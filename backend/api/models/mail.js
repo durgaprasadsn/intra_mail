@@ -1,7 +1,12 @@
 const mongoose = require('mongoose');
+const autoIncrement = require('mongoose-auto-increment');
+
+// initialize the incrementor
+autoIncrement.initialize(mongoose.connection);
 
 // defining mail schema
 const mailSchema = mongoose.Schema({
+    mailID: Number,
     sender: {
         type: String,
         required: true
@@ -32,6 +37,13 @@ const mailSchema = mongoose.Schema({
         }
     }
     // TODO attachments
+});
+
+mailSchema.plugin(autoIncrement.plugin,{
+    model : 'Mail',
+    field : 'mailId',
+    startAt : 10000,
+    incrementBy : 1 
 });
 
 module.exports = mongoose.model('Mail',mailSchema);
