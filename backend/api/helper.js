@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt';
+const bcrypt = require('bcrypt');
 
 exports.getPassHash = (password) => {
     bcrypt.hash(password,10, (err,hash) => {

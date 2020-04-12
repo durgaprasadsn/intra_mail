@@ -67,7 +67,7 @@ router.get('/received', authenticate, async (req, res, next) => {
 });
 
 // to save that particular user read the mail
-router.post('/read', authenticate, (req,res,next) => {
+router.post('/read', authenticate, async (req,res,next) => {
     const mailId = req.body.mailId;
     const reader = req.decodedToken.user;
     try{
