@@ -1,0 +1,520 @@
+subject,body,target_value
+Java Concurrency Exercises,"All need to submit the following seven exercises without fail before the next session, those who attended the last session have already completed (mostly) need to submit homework exercises for C++ Concurrency lesson. 
+
+IMportantly those who did not attend these two session need to complet C++ and Java Exercises and need to submit before next session.
+
+1: WAPIJ to print main thread properties such as ID, name, status etc.
+2: WAPIJ to create and start additional thread extending Thread class 
+3: WAPIJ to create and start additional thread implementing Runnable interface
+4: WAPIJ to illustrate thread sleeping and getting interrupted
+5.  WAPIJ to illustrate joining of threads
+6. WAPIJ to do multiple deposits and withdrawal of different values  by different threads (10+) to an account balance implementing correctly and naivly while maintaining a minimum balance of 1000 Rs.
+7. WAPIJ to repeat exercises six above with coarse and fine grained synchronization and observe and plot impact on speed. 
+
+Plagiarism and correctness will be checked !",1
+Final Stretch of Run,"Dear Students,
+
+Many of you are such committed, sincere and hardworking students that I am fortunate to have in HP course so much so that I can not stop telling my colleagues in university and even in IISc, about how proud I feel of you.
+
+We are in the final stretch of run whereby I am planning the final evaluation of a project with a weightage of 25 marks in a week or so and the exact schedule will be intimated. For  this you need at the least ACM journal format detailed report for which template is already shared as well as final ppt and demo (preferably video)
+
+I encourage you to additionally consider contributing an A3 or bigger size poster conveying your project and contribution graphically to any layman.
+
+Many of you have already started reviewing courses, I will be soon scheduling some review sessions as well and it is important to you to do given reading and important programming exercises record your doubt formally in the excel sheet shared in a lesson wise fashion.
+
+I wish you all good luck, health and a great career!",0
+Clarification Regarding Project Review Forms,"Dear All
+
+Some of you are mailing your project review forms to the CCs, some of you are mailing it to Rithvik and some to me. Due to this all the forms are scattered around in the inbox of different students :(
+
+Since sir wants a consolidated .zip of all the forms of each team. I request you to follow the below instructions very carefully and do the needful by 10:00 P.M. today.
+
+All teams are requested to send in one form (per team) replying to this mail,  copying sir mentioning your team number. Please only send one mail per team and mention your team number. Please send the editable version (.docx) and not a PDF!",0
+Regarding HP project presentation!,"Dear All,
+
+
+Today is the last date to Present your Project proposal. Reviews we have started already(1204) . Please appear for the same.
+
+
+Thanks and Regards,
+
+
+
+Priya K,
+
+PhD Scholar | Computer Science | PES University
+
+M:  +919916363065
+
+E:   priyak@pesu.pes.edu ",0
+People Present today (and last session was),"People who were present can submit their 7 exercises as ex1.java, ex2.java ....in single zip file as <name>.zip with their name in subject line.
+Dr. Rahul",1
+Re: Session Attendance,"You need to submit all exercises though and confirm completely seeing the live session by email as and when you complete it so is everybody.
+This is to be strictly adhered by all without any excuse and better not be piled up but complete as an ongoing regular basis.
+
+On Mon, Apr 13, 2020 at 3:01 PM Vishwas Rajashekar <vishuscorpio26@gmail.com> wrote:
+Respected Sir,
+
+Due to the fact that I have connection issues during the daytime, I cannot attend live sessions. Unfortunately, this is out of my control. 
+
+I catch up on the lectures after peak hours (after midnight).
+
+I sincerely apologise for my absence during the live sessions.
+
+Thank you.
+
+Regards,
+Vishwas",1
+People Missing from Live Session,are missing important hands on exercises for exams. this has been noted.,0
+LIve Session Today,"Will have hand-on parallel java exercises.
+Come read with Java setup.
+Many have not attended last sessions. This will hurt them and they may find important to attend today!",1
+CoronaCoating/Re: Project Proposals Related to COVID19 and Rapidly Communicable Diseases,"On Fri, Apr 10, 2020 at 4:25 PM Dr.Rahul Nagpal pesu CSE Staff <rahuln_pes_projects@pes.edu> wrote:
+.
+DO think and do your bit.
+Remember if your effort comes even close to saving any life, you have done your bit as human! 
+
+On Mon, Apr 6, 2020 at 11:45 PM Dr.Rahul Nagpal pesu CSE Staff <rahuln_pes_projects@pes.edu> wrote:
+Some have shown interest. please send  proposals by 12/04/2020
+you can do more than you think if you think more!
+
+On Sun, Apr 5, 2020 at 1:11 AM Dr.Rahul Nagpal pesu CSE Staff <rahuln_pes_projects@pes.edu> wrote:
+Dear All,
+
+As you know COVID 19 has changed our perspective towards life, death and everything in between. Scientific community at large is looking at ways to detect, manage and cope with this pandemic before any cure is available which does not seem like an immediate possibility.
+
+Projects Proposals are invited in the area of interest of lab as well as beyond related to COVID 19 and rapidly communicable diseases in general. 
+
+Proposals can be related to modeling, managing as well as various coping mechanisms with a purely mathematical and/or simulation based approach to doing interdisciplinary research upto and including drug discovery.
+
+Following page will give you some ideas on some of the ongoing projects  for the purpose of provoking thoughts for building proposals https://covid19.iisc.ac.in/
+
+Best Regards,
+======================================================================
+
+
+
+Dr. Rahul Nagpal, MS, PhD (IISc., Bangalore)
+
+Professor | Computer Science | PES University
+
+P:    91-080-2672-2449-708  | M:  +919880472190 
+
+E:   rahulnagpal@pes.edu    | S:   nagpal.rahul
+
+A:   02S4, Dept of CSE, PES University BSK III Stage, Bengaluru - 85
+
+======================================================================
+
+Papers  |  https://dblp.org/pers/hd/n/Nagpal:Rahul
+
+Patents |  https://patents.google.com/?inventor=Rahul+Nagpal",0
+Validated and Authentic Information about COVID19,"Dear All
+
+Scientifically Validated and Authentic information is now available  in various languages through  https://covid-gyan.in/
+
+Rely on correct information not rumours for the safety of you and your near and dear ones!
+
+Please assimilate and spread faster than COVID19 to save others!
+
+Thanks
+Dr. Rahul.",0
+Scientifically Validated and Authentic COVID19 Information,"is now available through the lab home page!  https://systems-research-lab.gitlab.io/lab-website/index.html
+Rely on correct information not rumours for the safety of you and your near and dear ones!
+Please assimilate and spread faster than COVID19 to save others!
+
+Thanks Siddarth for making it available at midnight!",0
+Final Stretch of Run,"Dear Students,
+
+Many of you are such committed, sincere and hardworking students that I am fortunate to have in HP course so much so that I can not stop telling my colleagues in university and even in IISc, about how proud I feel of you.
+
+We are in the final stretch of run whereby I am planning the final evaluation of a project with a weightage of 25 marks in a week or so and the exact schedule will be intimated. For  this you need at the least ACM journal format detailed report for which template is already shared as well as final ppt and demo (preferably video)
+
+I encourage you to additionally consider contributing an A3 or bigger size poster conveying your project and contribution graphically to any layman.
+
+Many of you have already started reviewing courses, I will be soon scheduling some review sessions as well and it is important to you to do given reading and important programming exercises record your doubt formally in the excel sheet shared in a lesson wise fashion.
+
+I wish you all good luck, health and a great career!
+
+Dr. Rahul",0
+Project Proposals Related to COVID19 and Rapidly Communicable Diseases,"
+Dr.Rahul Nagpal pesu CSE Staff
+Sun, 5 Apr, 01:11 (9 days ago)
+to Dr.Rahul, Dr.Rahul, bcc: me
+
+Dear All,
+
+As you know COVID 19 has changed our perspective towards life, death and everything in between. Scientific community at large is looking at ways to detect, manage and cope with this pandemic before any cure is available which does not seem like an immediate possibility.
+
+Projects Proposals are invited in the area of interest of lab as well as beyond related to COVID 19 and rapidly communicable diseases in general. 
+
+Proposals can be related to modeling, managing as well as various coping mechanisms with a purely mathematical and/or simulation based approach to doing interdisciplinary research upto and including drug discovery.
+
+Following page will give you some ideas on some of the ongoing projects  for the purpose of provoking thoughts for building proposals https://covid19.iisc.ac.in/
+
+Best Regards,
+======================================================================
+
+
+
+Dr. Rahul Nagpal, MS, PhD (IISc., Bangalore)
+
+Professor | Computer Science | PES University
+
+P:    91-080-2672-2449-708  | M:  +919880472190 
+
+E:   rahulnagpal@pes.edu    | S:   nagpal.rahul
+
+A:   02S4, Dept of CSE, PES University BSK III Stage, Bengaluru - 85
+
+======================================================================
+
+Papers  |  https://dblp.org/pers/hd/n/Nagpal:Rahul
+
+Patents |  https://patents.google.com/?inventor=Rahul+Nagpal
+
+",0
+Exercises for today session.,"Today's session was a hands- on fun session to do parallel Programming using C++(11) features. You need to extend toys session to complete following exercises using C++11
+
+1. Dining Philosopher Problem
+2. Sleeping Barber Problem
+3. Reader Writers Problem 
+and Of Course correct implementation of Bounder Buffer problem
+
+Additionally check additional features added by C++17 (parallel container operation and vectorized operation) as well as C++20 (smart pointers, transactional memory and task Blocks) and other concurrency features of modern c++.
+
+These are important concepts to learn.",1
+Important questions/topics posted on pesu forum,participation will be rewarding!,1
+Update Homework and Programming Assignment,"Given SO far, seems like not update for a while
+Need to capture all homework/PA given in live sessions by me as well as 
+programming exercises in the shared videos/tutorial by me.
+
+consider this as urgent and important and confirm back once done.
+
+Dr. Rahul.",1
+Interim Project Review,"Completed thoroughly for all 14 teams and feedback given to each team members in presence of mentors wherever possible.
+
+All are expected to complete/update the project artifacts in mastr sheet and send back additional results/input wherever asked asap and latest by Monday post which marks will be frozen.
+
+Dr. Rahul",1
+U5,"As communicated earlier, per my lesson plan I want 4 (2 hour - 80 minute) live session scheduled on 1.05 PM on 3rd and 4th of April followed by 10th and 11th of April.
+
+I will also require at least one additional live session that can be schedule subsequently.
+
+Confirm for planning and arrangement purpose.",1
+Facing connectivity issue again. Will give fresh slots inform all.,,0
+"Ensure your ppt, doc and video is linked to HP_Master before coming for review online",Also update vision and mission,0
+nobody has done skip list it seems,"many of not done any, those who did some din link to sheet",1
+No Vision No Mission,"Teams have not updated their project vision mission statement which need to be completed today along with the link to miro whiteboard (for remote discussions)  with the help of mentors today
+Those who have requested machine need to confirm acces to remote machine and if not working need to send their name, srn, email, contact, captive id and expire date of srn for remote access to mr. Siddu and Mr Manjunath from it team copying me and vishwas today.
+Please note interim project review for 15 marks for HP course review is being scheduled early next week.",0
+No Vision No Mission,No Vision No Mission,0
+Skip List Assignment,"Requires Understanding Skip list data structure and implementing
+
+1. Serial Version
+2. Lock based parallel Version
+3. Lock Free Version with and without Waitfree variations.
+
+Comparing Performance in realistic manner 
+
+Deadline is 24th of March 2020",1
+Hardware for Course project,"Please note if you need hardware/machine solely for the purpose of HP course project, you need to send request latest by tomorrow 12:00 Noon for consideration along with justification.
+No more Request will be entertained post that. Please request to Vishwas with justification cc me.
+
+@Vishwas to strictly follow the deadline for any requests.",0
+ISA1 and ISA2 and assignment,"All the material for ISA1 exam was covered in lectures or assigned homework based on lectures.
+It has been observed that given homework and programming exercises are not taken seriously and so far only 3/14 teams have submitted only partial (1, 2) programming exercises out of 3/4 given. Lecture time sometime is used partially for this programming exercises.
+
+It is suggested that every team/individual
+1. Complete all the homework and keep a not
+2. Complete all programming exercises and submit
+
+In the interest of even better scoring in ISA2 and ESA not to mention in the interest of learning this subject of great industrial importance to the core.
+
+Dr. Rahul",1
+Papers for today's presentaion,"@cc: Shalini Sai Prasad @abhiram bellur <bellur.abhiram@gmail.com>
+
+Please share the pdf of the paper presented today
+
+@S Jayasurya 01FB16ECS318PESU CSESTUDENT 
+
+Please send one paper per category for the best tool along with pointer to tools
+
+1. Flow based static
+2. Dynamic - Lockset
+3. Dynamic - HB
+4. Hybrid
+5. Model Checking
+6. Type checking (static)
+Are there tools who do static analysis and use that information during dynamic analysi to improver performance, precision or both, if so share latest work in that area as well
+
+@Niharika Pentapati(PES1201700215) PESU CSE Phd scholar  to include all material on course webpage and confirm",0
+Urgent : Details required regarding Compiler Design Laboratory Mini-Project,"Dear Students,
+
+Hope you are doing well and staying safe.
+
+This email intends to collect the CD Lab Mini-Project Team Details and concerns if any. Please click on the link below and provide your team details (SRN and Name of all the team members). Only one member from the team must fill the form : 
+
+https://forms.gle/q9DPTnfU9Q2b4S2H9
+
+Kindly treat this urgent and important and provide the details by today evening 11:00 PM.
+
+Thanks & Regards,
+Preet Kanwal
+Assistant Professor,
+Dept. of CSE,
+PES University, Bangalore.
+mailto : preetkanwal@pes.edu",1
+Re: Chane in time:Special Topic ISA1 and ISA2 review tomorrow(20-11-19) from 3.00 PM-3.20 PM,"Dear students,
+
+Looks like many of you haven't read the ,mail .Note the change in time:
+Special Topic ISA1(CBT1) and ISA2(CBT2) review is scheduled on 20-11-19(i.e tomorrow) .
+
+Note the change in time and venue:
+Timing:3.00 PM -3.20 PM
+Venue:
+For 3rd sem  B-205 C,B-205 D,
+For 5th sem    B-209,210
+
+Since there are only 4 labs available ,kindly complete the review quickly and give others a chance to review.
+With Regards,
+Sangeeta V I
+Assistant Professor,
+Department of Computer Science & Engineering,
+PES University,
+Bangalore.
+",0
+Bharat Padhe Online,"Dear all,
+The Hon’ble Minister of Human Resource Development Shri. Ramesh Pokhriyal Nishank, has initiated a campaign “Bharat Padhe Online” inviting suggestions and sharing of ideas from academic fraternity. In this regard I invite you to fill the google form(link given below) with your thoughts on this matter. Please share the ideas on or before 13th Apr 2020 5pm.
+https://docs.google.com/forms/d/e/1FAIpQLSfalUT3snBfCF86hAscB8suvpvKn9EDKY5VsJRty8OonaW_sg/viewform?vc=0&c=0&w=1&usp=mail_form_link
+Thanks & Rgds
+Dr.Shylaja S S
+Chairperson(UG&PG Studies),Dept of CSE, PES University,
+& Prof & Head of the Dept CS & IS,PESIT,Bangalore",0
+Live Sessions,"Dear Students,
+Given the current situation in the country, PESU has taken measures to cover the remaining syllabus via live sessions through impartus captured from teachers' homes. I request all of you to make full use of these sessions  and get ready for the tests and exams. Request you to login at the right time. Send any consolidated feedback or questionnaire that you may have. We will schedule separate sessions for answering them.
+Stay safe and healthy
+Thanks & Rgds
+Dr.Shylaja S S
+Chairperson(UG&PG Studies),Dept of CSE, PES University,
+& Prof & Head of the Dept CS & IS,PESIT,Bangalore
+",0
+Opening/Opportunity as Campus Ambassadors for Deloitte - The Social Media Strategist,"Dear Students,
+
+
+
+Deloitte is launching the ‘The Social Media Strategist’ challenge. Two students from the campus will play the role of Campus Ambassadors for Deloitte - both within campus and on social media sites, to create engagement around the TechnoUtsav 3.0 Competition. This tech-centric competition provides students with an opportunity to showcase their technical, innovative, and analytical acumen.
+
+
+
+Interested Students can meet me in First Floor Staff room by today EOD(3:30 PM). The selected students will then have an interaction with the Principal/Registrar : Prof. K S Sridhar in Placement Office.
+
+
+Thanks & Regards,
+Preet Kanwal
+Assistant Professor,
+Dept. of CSE,
+PES University, Bangalore.
+mailto : preetkanwal@pes.edu",0
+Regarding GE Health Care project.,"Dear students,
+
+GE healthcare is offering a project on building an application using Google Flatter.
+Interested students are hereby informed to email your resume to the following mail id:
+cse.pesit@pes.edu
+
+
+Note: Internal Guide will be Dr.Ananth Koppar.
+For any furthur details contact him.",0
+Sixth Semester Elective: Consolidated Copy affix signature,"Dear Students,
+
+This mail is regarding the 6th semester Elective courses.
+Elective Courses i.e, Elective - 3 and Elective-4 are finalized and strictly changes are not allowed.
+Refer Final list sent in the previous email.
+
+Important Note:
+1) Hard copy of consolidated Elective Courses student list will be sent to all the sections this week, students should verify the courses opted in Elective-3 and Elective-4 and affix your signature, without fail.
+2) If In case of any queries/inappropriate details like SRN,Name etc., you are not supposed to write comment nor sign in that copy, but should meet me in person and get it clarified and then only you are allowed to affix your signature in that hard copy.
+3) Also students should check Elective Courses opted by them are also reflected in PESU app without fail, if not then meet Dept PESU Academy Coordinator's.
+4) If incase any student is absent for class or lab this week, then individual student should come and affix signature in the hard copy in ground floor discussion room @3.30pm.
+
+FYI,
+Affixing signature in the Consolidated copy and reflection of the courses that the student has opted for in the  PESU app is the Confirmation of Elective Courses opted by a student.",0
+"Shorten Working Hours on Monday : January 27, 2020 (Due to Pro-Chancellor's Addressal)","Dear All,
+
+In view of addressal by Prof. Jawahar Doreswamy, Pro Chancellor – PES University to the students of Sem 4 and Sem 6, on Monday: January 27, 2020 at 2:30 PM in MRD Auditorium, the Dept. of CSE will follow the below mentioned timings:
+
+Class
+
+Timings
+
+Duration
+
+Class 1
+
+8:15 am – 9:05 am
+
+50 min
+
+Class 2
+
+9:05 am – 9:55 am
+
+50 min
+
+Short break
+
+9:55 am – 10:25 am
+
+30 min
+
+Class 3
+
+10:25 am – 11:15 am
+
+50 min
+
+Class 4
+
+11:15 am – 12:05 pm
+
+50 min
+
+Lunch break
+
+12:05 pm – 12:35 pm
+
+30 min
+
+Class 5
+
+12:35 pm – 1:25 pm
+
+50 min
+
+Class 6
+
+1:25 pm – 2:10 pm
+
+45 min
+
+           
+It is mandatory for all to occupy seats in MRD Auditorium by 2:20 PM in view of the addressal. Needless to say, you must maintain silence during the session.  
+
+I request you to kindly cooperate and follow the above timings strictly.
+
+Thanks & Regards,
+Preet Kanwal
+Assistant Professor,
+Dept. of CSE,
+PES University, Bangalore.
+mailto : preetkanwal@pes.edu",0
+Important!!! Pro-Chancellor's address on 16/09/2019,"Dear Students,
+Honourable Pro-Chancellor Prof D Jawahar will address the students on 27/01/2020 at 2.30pm. All are hereby informed to compulsorily attend the meeting. Please ensure pindrop silence during the address.  Attendance will be taken in the auditorium. 
+Thanks & Rgds
+Dr.Shylaja S S
+Chairperson(UG&PG Studies),Dept of CSE, PES University,
+& Prof & Head of the Dept CS & IS,PESIT,Bangalore",0
+Intel Contest Orientation Registration.,"Dear students,
+With reference to my previous email  regarding the  Intel contest,
+CIE in collaboration with CS and ECE Department is conducting a Orientation/Contest Kickoff  on Jan 17/Fri at 3.45PM, 12th floor seminar hall ( Venue)  - Intel engineers will provide details on the challenge, technology and answer to your queries (if any).
+In this regard,  interested students are hereby informed to register  by filling the form.( please find the link below).
+
+https://forms.gle/dG34tsCTwWKotmca6
+For any queries revert back to me.",0
+Change in class for Knowledge Management (Prof.RBA and Prof.DK) for today(07-01-20),"Dear students,
+
+Kindly note the change in class room only for students who have registered for knowledge management  under Prof.Raghu B A and Prof.Krupesha D.
+Prof.Krupesha D will take the combined class in ground floor seminar hall.
+All the students registered under Prof.Raghu B A and Prof.D.Krupesha must assemble in ground floor seminar hall at 1.30 PM today.
+
+ 
+With Regards,
+Sangeeta V I
+Assistant Professor,
+Department of Computer Science & Engineering,
+PES University,
+Bangalore.",0
+Semester 6: Course Information,"Dear Students,
+PFA
+
+Thanks & Regards,
+Madhura V
+Assistant Professor,
+Dept. of CSE,
+PES University",0
+Regarding CD lab evaluations :,"Dear Teams,
+
+Your Phase 4 review is scheduled with Prof. H B Mahesh Sir. Kindly finish your ISA evaluations by next Friday. I'll be finalizing the marks by the end of next week. 
+
+wishes, 
+      Jamuna ",1
+Regarding Compiler Design Mini-Project Review,"Dear Students,
+
+This is to bring to your kind notice that the next review will commence from April 6, 2020. The deliverables expected for the review are :
+Creation of Symbol Table (with required fields for line no, scope, value, type, storage required)
+Validity of Syntax
+Evaluation of Expressions and update in symbol table
+Error Handling
+Abstract Syntax tree generation
+Intermediate code generation
+Code optimization (Optional right now - if you are ready)
+The project will be given a fresh look (which works to your benefit). Please make sure you put up a good show and demonstarte good work.
+
+The evaluation will be done online via Google Hangouts. Meeting invites will be shared by a faculty member who will review your project. Hence it is highly important that you provide the team details at  https://forms.gle/q9DPTnfU9Q2b4S2H9 (ignore if already provided).
+
+I have recieved a few queries related to project implementation, which I will answer by tomorrow EOD. 
+
+Good Luck !
+
+Thanks & Regards,
+Preet Kanwal
+Assistant Professor,
+Dept. of CSE,
+PES University, Bangalore.
+mailto : preetkanwal@pes.edu",1
+[pes1cse2021] CD LAB - Assignment,"Dear Students,
+The coming week as part of the project you are expected to complete the following  .
+Validate the input  as per Grammar
+Update the value and datatype field in the Symbol Table for all identifiers
+Best regards,
+Kiran P,
+Assistant Professor, Dept of CSE
+PES University",1
+Request to finish the Special Topic Mini Project Reviews within this week :,"Dear All, 
+
+Hope this message finds you all well. Inspite of the recent events most of the Special Topic Mini Project Reviews were carried out Successfully on Skype and Google Hangouts. In this regard I would like to thank everyone for the cooperation. 
+
+Also I would request all the left out teams to finish the reviews within this week and report back to me as soon as possible so that final ESA will be scheduled accordingly. 
+
+I'll keep you all posted for any updates. 
+
+wishes, 
+  jamuna
+
+On Mon, 16 Mar, 2020, 11:04 PM Jamuna S Murthy, <jamunasmurthy@pes.edu> wrote:
+Dear Students, 
+
+Hope this message finds you well. This is to inform that you can use the facility of Google Hangouts or Skype and finish your Review - 2 presentations for special topic mini project with your guide within next week. 
+
+Kindly try finishing your presentations if possible to stay on track with your project. 
+
+wishes, 
+  jamuna 
+
+On Mon, 2 Mar, 2020, 4:10 PM Jamuna S Murthy, <jamunasmurthy@pes.edu> wrote:
+Dear Students,
+
+You are hereby informed that Review- 2 for Special Topic Mini - Project is scheduled from 16/03/2020 to 21/03/2020.
+In this regard I would request you all to kindly meet your respective guides and panel members, note their free slots and fix up the date and timings for your presentations. 
+Students who fail to give their presentations within the required deadline will be penalized. Kindly find the Presentation Template and Panel Members Details for your reference. 
+
+
+Thanks and Regards,
+
+Jamuna S Murthy M.Tech (SSE)
+Assistant Professor 
+PES University
+Outer Ring Rd, Banashankari 3rd Stage, Banashankari, 
+Bengaluru, Karnataka 560085
+Ph: +91 8971289042
+Email: jamunasmurthy@pes.edu",1
