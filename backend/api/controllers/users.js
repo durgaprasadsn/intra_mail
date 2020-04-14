@@ -5,12 +5,15 @@ const User = require('../models/user');
 require('dotenv/config');
 
 exports.checkUser = async (req, res, next) => {
+    console.log("inside check user");
     try {
         user = await User.find({ user: req.body.user });
         if (user.length >= 1) {
+            console.log("sending 200");
             res.status(200).json();
         }
         else {
+            console.log("Sending 404");
             res.status(404).json();
         }
     } catch (err) {
@@ -42,6 +45,7 @@ exports.userSignUP = (req, res, next) => {
                 twoFA: req.body.tfa
             });
             user.save().then(result => {
+                console.log("Sending 201");
                 res.status(201).json();
             }).catch(err => {
                 console.log(err);
@@ -52,9 +56,11 @@ exports.userSignUP = (req, res, next) => {
 }
 
 exports.userLogin = async (req, res, next) => {
+    console.log("Inside user login");
     try {
         user = await User.find({ user: req.body.user });
         if (user.length == 0) {
+            console.log("Sending 401");
             res.status(401).json({
                 message: 'Authentication Failed'
             });
@@ -66,10 +72,12 @@ exports.userLogin = async (req, res, next) => {
                 res.status(500).json({});
             } else if (result) {
                 const token = jwt.sign({ user: user[0].user }, process.env.KEY, { expiresIn: '1h' });
+                console.log("Sending 200 with token");
                 res.status(200).json({
                     token: token
                 });
             } else {
+                console.log("Sending 401");
                 res.status(401).json({
                     message: 'Authentication Failed'
                 });
@@ -84,8 +92,10 @@ exports.userLogin = async (req, res, next) => {
 
 exports.deleteUser = async (req, res, next) => {
     const user = req.decodedToken.user;
+    console.log("inside delete user");
     try {
         await User.remove({ user: user });
+        console.log("Sending 200");
         res.status(200).json();
     } catch (err) {
         console.log(err);
