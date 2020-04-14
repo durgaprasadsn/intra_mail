@@ -21,24 +21,6 @@ class Login extends React.Component {
               alert("You are already logged in");
               window.location.href = "/home";
             }
-            if (this.status == 403){
-              alert("User not found");
-              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              window.location.href="/login";
-            }
-            if(this.status == 401){
-              alert("incorrect password");
-              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              window.location.href="/login";
-            }
-            if (this.status == 204){
-              //not yet logged in. no problem.
-              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              console.log("Login Again");
-            }
           }
         }
       }
@@ -57,6 +39,8 @@ class Login extends React.Component {
           let data = new FormData();
           data.append("email",document.getElementById("email").value);
           data.append("password",document.getElementById("password").value);
+          console.log(document.getElementById("email").value);
+          console.log(document.getElementById("password").value);
           console.log(data);
           this.xhr.send(data);
         },
@@ -66,16 +50,6 @@ class Login extends React.Component {
               alert("Successful login");
               window.location.href = "/home";
               }
-          
-          if (this.status == 403){
-            alert("User not found");
-          }
-          if(this.status == 401){
-            alert("Unauthorized, incorrect password");
-          }
-          if(this.status == 400){
-            alert("Please fill data");
-          }
           }
         }
       }

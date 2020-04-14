@@ -26,15 +26,9 @@ class Signup extends React.Component {
         },
         callback:function(){
           if (this.readyState == 4){
-            if (this.status == 202){
+            if (this.status == 200){
               alert("Successful signup")
             }
-          if (this.status == 403){
-            alert("Error User found");
-          }
-          if(this.status == 400){
-            alert("Please fill data");
-          }
           }
         }
       }

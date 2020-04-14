@@ -30,27 +30,8 @@ class Login extends React.Component {
         },
         callback:function(){
           if (this.readyState == 4){
-            if (this.status == 202){
-              alert("You are already logged in");
-              window.location.href = "/home";
-            }
-            if (this.status == 403){
-              alert("User not found");
-              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              window.location.href="/login";
-            }
-            if(this.status == 401){
-              alert("incorrect password");
-              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              window.location.href="/login";
-            }
-            if (this.status == 204){
-              //not yet logged in. no problem.
-              document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              document.cookie = "loginstring=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-              console.log("Login Again");
+            if (this.status == 200) {
+              //
             }
           }
         }
@@ -60,6 +41,34 @@ class Login extends React.Component {
     check_login_state();
   }
   render() {
+    function send_mail() {
+      console.log("Sending MAil");
+      console.log(document.getElementById("to_mail").value);
+      console.log(document.getElementById("subject").value);
+      console.log(document.getElementById("content").value);
+      var mail_object = {
+        xhr: new XMLHttpRequest(),
+        mail_send: function() {
+          this.xhr.open("POST","http://localhost:8080/api/mail",true);
+          this.xhr.onreadystatechange = this.callback;
+          this.xhr.withCredentials = true;
+          var content = new FormData();
+          content.append("to_mai", document.getElementById("to_mail").value);
+          content.append("subject", document.getElementById("subject").value);
+          content.append("content", document.getElementById("content").value);
+          console.log(content)
+          this.xhr.send(content);
+        },
+        callback: function(){
+          if (this.readyState == 4) {
+            if (this.status == 200) {
+              console.log("Correct");
+              window.location.href = "/home";
+            }
+          }
+        }
+      }
+    }
     return (
       <>
         <main className="col s2">
@@ -82,7 +91,7 @@ class Login extends React.Component {
                 <label for="content">Content:</label>
               </div>
 
-              <Button>Send Mail</Button>
+              <Button onClick={send_mail}>Send Mail</Button>
             </div>
               </Modal>
              {/* <h6><a className="waves effect " href="#" onClick={e => { this.showModal(); }}>

@@ -10,8 +10,6 @@ import Intro from "./pages/intro";
 import Loginnav from "./components/Loginnav";
 import Signupnav from "./components/Signupnav";
 import Homenav from "./components/Homenav";
-import Compose from "./pages/compose";
-import Composenav from "./components/composenav";
 import About from "./pages/about";
 
 class App extends React.Component {
@@ -48,10 +46,6 @@ class App extends React.Component {
               <Homenav />
               <Home />
             </>
-          </Route>
-          <Route path="/compose" exact>
-            <Composenav />
-            <Compose />
           </Route>
           <Route path="/about" exact>
             <About />
