@@ -7,7 +7,7 @@ require('dotenv/config');
 exports.checkUser = async (req, res, next) => {
     console.log("inside check user");
     try {
-        user = await User.find({ user: req.body.user });
+        user = await User.find({ user: req.query.user });
         if (user.length >= 1) {
             console.log("sending 200");
             res.status(200).json();
@@ -23,6 +23,7 @@ exports.checkUser = async (req, res, next) => {
 }
 
 exports.userSignUP = (req, res, next) => {
+    console.log(req.body);
     bcrypt.hash(req.body.password, 10, (err, hash) => {
         console.log("bcrypt fn called");
         if (err) {
