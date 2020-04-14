@@ -32,11 +32,8 @@ const mailSchema = mongoose.Schema({
         }]
     },
     category: {
-        type: {
-            type: String
-        }
+        type: String
     }
-    // TODO attachments
 });
 
 mailSchema.plugin(autoIncrement.plugin,{
