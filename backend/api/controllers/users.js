@@ -92,6 +92,7 @@ exports.userLogin = async (req, res, next) => {
 }
 
 exports.checkLogin = (req,res) => {
+    console.log("Login passed");
     res.status(200).json();
 }
 
