@@ -19,6 +19,13 @@ class Homenav extends React.Component {
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
                 <a className="waves-effect waves-light btn green" href="#">
+                  <NavLink to="/sent" exact>
+                    Sent
+                  </NavLink>
+                </a>                
+              </li>
+              <li>
+                <a className="waves-effect waves-light btn green" href="#">
                   <NavLink to="/logout" exact>
                     Logout
                   </NavLink>

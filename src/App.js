@@ -11,6 +11,8 @@ import Loginnav from "./components/Loginnav";
 import Signupnav from "./components/Signupnav";
 import Homenav from "./components/Homenav";
 import About from "./pages/about";
+import Sent from "./pages/sent";
+import Sentnav from "./components/Sentnav";
 
 class App extends React.Component {
   render() {
@@ -49,6 +51,10 @@ class App extends React.Component {
           </Route>
           <Route path="/about" exact>
             <About />
+          </Route>
+          <Route path="/sent" exact>
+            <Sentnav />
+            <Sent />
           </Route>
         </Switch>
       </Router>

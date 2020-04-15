@@ -5,7 +5,7 @@ from math import log, sqrt
 import pandas as pd
 import numpy as np
 import re
-
+import flask
 
 def process_message(message, lower_case = True, stem = True, stop_words = True, gram = 2):
     #print(message)
@@ -143,6 +143,6 @@ df.drop(df.index[18])
 classifier = Classifier(df, 'tf-idf')
 classifier.train()
 
-message = "We will have ongoing classes"
+message = "We have assignment tomorrow"
 pm = process_message(message)
 print(classifier.classify(pm))
