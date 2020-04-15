@@ -71,14 +71,105 @@ class Home extends React.Component {
             if (this.status == 200) {
               console.log("Correct");
               const mails = JSON.parse(this.responseText);
+              console.log(mails)
+              console.log(this.responseText)
               //TODO mails is a list of mails
+              var response = [
+                {
+                "receiver": [
+                  "user2"
+                ],
+                "readBy": [],
+                "_id": "5e95afce99bc312288633f48",
+                "sender": "user1",
+                "timeSent": "2020-04-14T12:42:54.386Z",
+                "subject": "subject2",
+                "body": "body2",
+                "category": "assignment",
+                "mailId": 10000,
+                "__v": 0
+                },
+                {
+                  "receiver": [
+                    "user2"
+                  ],
+                  "readBy": [],
+                  "_id": "5e95afce99bc312288633f48",
+                  "sender": "user1",
+                  "timeSent": "2020-04-14T12:42:54.386Z",
+                  "subject": "subject3",
+                  "body": "body3",
+                  "category": "notification",
+                  "mailId": 10001,
+                  "__v": 0
+                },
+                {
+                  "receiver": [
+                    "user2"
+                  ],
+                  "readBy": [],
+                  "_id": "5e95afce99bc312288633f48",
+                  "sender": "user1",
+                  "timeSent": "2020-04-14T12:42:54.386Z",
+                  "subject": "subject4",
+                  "body": "body4",
+                  "category": "notification",
+                  "mailId": 10002,
+                  "__v": 0
+                }
+            ]
+            function individual_assigment(e) {
+              var id  = e.target.id;
+              document.getElementById("individual_display").innerHTML = "";
+              console.log(e.target.id.substring(0, e.target.id.toString()));
+              console.log(document.getElementById("individual_display").innerHTML);
+              console.log(response[id]);
+              var division = document.createElement("div");
+              division.setAttribute("className", "col m12");
+              var head_subject = document.createElement("h5");
+              var head_sub = document.createElement("h6");
+              head_sub.innerHTML =  response[id]["subject"];
+              head_subject.innerHTML = "Subject :"+ "<br>";
+              var head_body = document.createElement("h5");
+              var head_bod = document.createElement("h6");
+              head_bod.innerHTML = response[id]["body"];
+              head_body.innerHTML += "Body :" + "<br>";
+              division.appendChild(head_subject);
+              division.appendChild(head_sub);
+              division.appendChild(head_body);
+              division.appendChild(head_bod);
+              document.getElementById("individual_display").append(division);
+            }
+            document.getElementById("display").innerHTML = ""
+            for (var i = 0; i < response.length; i++) {
+              if (response[i]["category"] == "assignment") {
+                console.log("notification");
+                console.log(response[i]["sender"]);
+                console.log(response[i]["subject"]);
+                console.log(response[i]["body"]);
+                // document.getElementById("display").innerHTML += response[i]["subject"]
+                var division = document.createElement("div");
+                division.className = "col m12 card";
+                division.setAttribute("id", i);
+                var head = document.createElement("h5");
+                var anchor = document.createElement("a");
+                anchor.setAttribute("id", i);
+                anchor.href = "#";
+                anchor.innerHTML = response[i]["sender"] + " " + response[i]["subject"];
+                anchor.addEventListener("click", individual_assigment);
+                head.appendChild(anchor);
+                division.appendChild(head);
+                document.getElementById("display").appendChild(division);
+              }
+            }
+              //TODO: mails is a list of mails for each mail create a div showing subject
+            }
             }
           }
         }
-      }
       obj.get_mails();
     }
-
+  
     function notification_display() {
       //document.getElementById("display").innerHTML = "Notification Change";
       var obj = {
@@ -95,6 +186,96 @@ class Home extends React.Component {
             if (this.status == 200) {
               console.log("Correct");
               const mails = JSON.parse(this.responseText);
+              console.log(this.responseText)
+              console.log(mails)
+              var response = [
+                {
+                "receiver": [
+                  "user2"
+                ],
+                "readBy": [],
+                "_id": "5e95afce99bc312288633f48",
+                "sender": "user1",
+                "timeSent": "2020-04-14T12:42:54.386Z",
+                "subject": "subject2",
+                "body": "body2",
+                "category": "assignment",
+                "mailId": 10000,
+                "__v": 0
+                },
+                {
+                  "receiver": [
+                    "user2"
+                  ],
+                  "readBy": [],
+                  "_id": "5e95afce99bc312288633f48",
+                  "sender": "user1",
+                  "timeSent": "2020-04-14T12:42:54.386Z",
+                  "subject": "subject3",
+                  "body": "body3",
+                  "category": "notification",
+                  "mailId": 10001,
+                  "__v": 0
+                },
+                {
+                  "receiver": [
+                    "user2"
+                  ],
+                  "readBy": [],
+                  "_id": "5e95afce99bc312288633f48",
+                  "sender": "user1",
+                  "timeSent": "2020-04-14T12:42:54.386Z",
+                  "subject": "subject4",
+                  "body": "body4",
+                  "category": "notification",
+                  "mailId": 10002,
+                  "__v": 0
+                }
+            ]
+            function individual(e) {
+              var id  = e.target.id;
+              document.getElementById("individual_display").innerHTML = "";
+              console.log(e.target.id.substring(0, e.target.id.toString()));
+              console.log(document.getElementById("individual_display").innerHTML);
+              console.log(response[id]);
+              var division = document.createElement("div");
+              division.setAttribute("className", "col m12");
+              var head_subject = document.createElement("h5");
+              var head_sub = document.createElement("h6");
+              head_sub.innerHTML =  response[id]["subject"];
+              head_subject.innerHTML = "Subject :"+ "<br>";
+              var head_body = document.createElement("h5");
+              var head_bod = document.createElement("h6");
+              head_bod.innerHTML = response[id]["body"];
+              head_body.innerHTML += "Body :" + "<br>";
+              division.appendChild(head_subject);
+              division.appendChild(head_sub);
+              division.appendChild(head_body);
+              division.appendChild(head_bod);
+              document.getElementById("individual_display").append(division);
+            }
+            document.getElementById("display").innerHTML = ""
+            for (var i = 0; i < response.length; i++) {
+              if (response[i]["category"] == "notification") {
+                console.log("notification");
+                console.log(response[i]["sender"]);
+                console.log(response[i]["subject"]);
+                console.log(response[i]["body"]);
+                // document.getElementById("display").innerHTML += response[i]["subject"]
+                var division = document.createElement("div");
+                division.className = "col m12 card";
+                division.setAttribute("id", i);
+                var head = document.createElement("h5");
+                var anchor = document.createElement("a");
+                anchor.setAttribute("id", i);
+                anchor.href = "#";
+                anchor.innerHTML = response[i]["sender"] + " " + response[i]["subject"];
+                anchor.addEventListener("click", individual);
+                head.appendChild(anchor);
+                division.appendChild(head);
+                document.getElementById("display").appendChild(division);
+              }
+            }
               //TODO: mails is a list of mails for each mail create a div showing subject
             }
           }
@@ -147,7 +328,7 @@ class Home extends React.Component {
               <Modal header="Compose Mail" trigger={trigger}>
                 <div className="col s12 m5 offset-m3 card center">
                   <div className="input-field col s12">
-                    <input className="validate" type="email" name="to_mail" id="to_mail" required />
+                    <input className="validate" type="text" name="to_mail" id="to_mail" required />
                     <label for="to_mail">To:</label>
                   </div>
 
@@ -222,7 +403,7 @@ class Home extends React.Component {
               </div>
             </div>
             <div className="col s6">
-              <div className="col m12 card center">
+              <div className="col m12 card center" id="individual_display">
                 <p>Displaying Each Individual Mail</p>
                 <p>Diaply Mail which might be in the format of Subject and Content</p>
                 <p>Hello How r u</p>

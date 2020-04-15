@@ -54,7 +54,7 @@ class Sent extends React.Component {
                 <Modal header="Compose Mail" trigger={trigger}>
                 <div className="col s12 m5 offset-m3 card center">
                   <div className="input-field col s12">
-                    <input className="validate" type="email" name="to_mail" id="to_mail" required />
+                    <input className="validate" type="text" name="to_mail" id="to_mail" required />
                     <label for="to_mail">To:</label>
                   </div>
 
