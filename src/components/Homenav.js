@@ -17,13 +17,13 @@ class Homenav extends React.Component {
               Intra mail System
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li>
+              {/* <li>
                 <a className="waves-effect waves-light btn green" href="#">
                   <NavLink to="/sent" exact>
                     Sent
                   </NavLink>
                 </a>                
-              </li>
+              </li> */}
               <li>
                 <a className="waves-effect waves-light btn green" href="#">
                   <NavLink to="/logout" exact>

@@ -18,10 +18,15 @@ class Home extends React.Component {
     
   componentDidMount() {
     // Auto initialize all the things!
+    var check = localStorage.getItem('token');
+    if (!check) {
+      window.location.href = "/login";
+    }
     M.AutoInit();
     if (this.state.display == "notification") {
       document.getElementById("display").innerHTML = "Initial";
     }
+    console.log();
     function check_login_state(){
       var sender_object = {
         xhr: new XMLHttpRequest(),
@@ -108,21 +113,44 @@ class Home extends React.Component {
                 </div>
                 </Modal>
               </div>
-              {/* <div className="col s8">
-                <div className="col s3 m1 offset-m12 card center">
+              {/* <div className="col s6 m2 offset-m8 card center">
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+                  <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">three</a></li>
+                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                  </ul>
+                </div> */}
+              <div className="col s8">
+                {/* <div className="col s3 m1 offset-m12 card center">
                 <h6>
                   <NavLink to="/sent" exact>
                     Sent
                   </NavLink>
                 </h6>
+                </div> */}
+                <div className="col s8 m1 offset-m12 card center">
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop</a>
+                  <ul id='dropdown1' class='dropdown-content'>
+                  <li> 
+                      <NavLink to="/home" exact>
+                        Home
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/sent" exact>
+                        Sent
+                      </NavLink>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    
+                    
+                  </ul>
                 </div>
-              </div> */}
-              {/* <div className="col s8">
-                <Dropdown label="dropdown">
-                  <DropdownItem link="/sent">Sent</DropdownItem>
-                  <DropdownItem link="/logout">Logout</DropdownItem>
-                </Dropdown>
-              </div> */}
+              </div>
             </div>
           <div className="row">
             <div className="col s6">

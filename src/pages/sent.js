@@ -9,6 +9,11 @@ const trigger = <Button>Compose Mail</Button>
 
 class Sent extends React.Component {
   componentDidMount() {
+    var check = localStorage.getItem('token');
+    if (!check) {
+      window.location.href = "/login";
+    }
+
     // Auto initialize all the things!
     M.AutoInit();
   }
@@ -66,6 +71,32 @@ class Sent extends React.Component {
                   <Button onClick={send_mail}>Send Mail</Button>
                 </div>
                 </Modal>
+              </div>
+              <div className="col s8">
+                {/* <div className="col s3 m1 offset-m12 card center">
+                <h6>
+                  <NavLink to="/sent" exact>
+                    Sent
+                  </NavLink>
+                </h6>
+                </div> */}
+                <div className="col s8 m1 offset-m12 card center">
+                <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop</a>
+                  <ul id='dropdown1' class='dropdown-content'>
+                    <li> 
+                      <NavLink to="/sent" exact>
+                        Sent
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/home" exact>
+                        Home
+                      </NavLink>
+                    </li>
+                    <li class="divider" tabindex="-1"></li>
+                    
+                  </ul>
+                </div>
               </div>
               </div>
               <div className="row">

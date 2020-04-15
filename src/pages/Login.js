@@ -50,8 +50,15 @@ class Login extends React.Component {
               alert("Successful login");
               let token = "Bearer " + JSON.parse(this.responseText).token;
               localStorage.setItem('token',token);
-              window.location.href = "/home";
+              var check = localStorage.getItem('token');
+              if (check) {
+                window.location.href = "/home";
               }
+              else {
+                alert("Error in Logging");
+                window.location.href = "/login"
+              }
+            }
           }
         }
       }
