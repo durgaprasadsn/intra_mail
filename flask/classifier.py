@@ -133,16 +133,15 @@ class Classifier(object):
 
 
 #main part which needs to be made a api
+if __name__ == "__main__":
+    df = pd.read_csv('database.csv')
+    df['message'] = df['subject'] + " "+ df['body']
+    df.drop(['subject','body'],axis=1,inplace=True)
+    df.rename(columns = {'target_value': 'labels'}, inplace = True)
 
-df = pd.read_csv('database.csv')
-df['message'] = df['subject'] + " "+ df['body']
-df.drop(['subject','body'],axis=1,inplace=True)
-df.rename(columns = {'target_value': 'labels'}, inplace = True)
-df.drop(df.index[18])
+    classifier = Classifier(df, 'tf-idf')
+    classifier.train()
 
-classifier = Classifier(df, 'tf-idf')
-classifier.train()
-
-message = "We have assignment tomorrow"
-pm = process_message(message)
-print(classifier.classify(pm))
+    message = "We have assignment tomorrow"
+    pm = process_message(message)
+    print(classifier.classify(pm))
