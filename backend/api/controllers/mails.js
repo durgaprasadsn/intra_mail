@@ -1,12 +1,28 @@
-const request = require('request-promise');
+const axios = require('axios');
 const Mail = require('../models/mail');
 
 exports.postMail = async (req, res, next) => {
     const sender = req.decodedToken.user;
     console.log("Inside postMail");
+    const message = req.body.subject + " " + req.body.body; 
+    const data = JSON.stringify({
+        message: message
+    })
+    const options = {
+        url: 'http://localhost:9000/api/classify',
+        method: 'POST',
+        headers: {
+            'Content-Type':'application/json;charset=UTF-8'
+        },
+        data: data
+    }
     try {
         //const category = JSON.parse(await request.get('')).category;
-        category = 'assignment';
+        console.log("sending to classifier");
+        const category = JSON.parse(await axios.post(options)).category;
+        Console.log("Category received");
+        console.log(category);
+        //category = 'assignment';
         const mail = new Mail({
             sender: sender,
             receiver: req.body.receiver,
