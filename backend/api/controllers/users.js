@@ -91,6 +91,10 @@ exports.userLogin = async (req, res, next) => {
     }
 }
 
+exports.checkLogin = (req,res) => {
+    res.status(200).json();
+}
+
 exports.deleteUser = async (req, res, next) => {
     const user = req.decodedToken.user;
     console.log("inside delete user");
