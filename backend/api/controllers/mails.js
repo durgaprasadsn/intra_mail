@@ -19,9 +19,12 @@ exports.postMail = async (req, res, next) => {
     try {
         //const category = JSON.parse(await request.get('')).category;
         console.log("sending to classifier");
-        const category = JSON.parse(await axios.post(options)).category;
-        Console.log("Category received");
-        console.log(category);
+        const response = await axios(options);
+        console.log("Category received");
+        console.log(response);
+        console.log(response.data);
+        console.log(response.data.category);
+        category = response.data.category;
         //category = 'assignment';
         const mail = new Mail({
             sender: sender,
