@@ -11,14 +11,14 @@ class Loginnav extends React.Component {
   render() {
     return (
       <header>
-        <nav>
-          <div className="nav-wrapper blue">
+        <nav className="transparent">
+          <div className="nav-wrapper">
             <a href="#" className="brand-logo">
               Intra mail System
             </a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
-                <a className="waves-effect waves-light btn green" href="#">
+                <a className="waves-effect waves-light btn" href="#">
                   <NavLink to="/" exact>
                     Intro
                   </NavLink>

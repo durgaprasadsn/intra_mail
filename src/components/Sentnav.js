@@ -11,8 +11,8 @@ class Homenav extends React.Component {
   render() {
     return (
       <header>
-        <nav>
-          <div className="nav-wrapper blue">
+        <nav className="transparent">
+          <div className="nav-wrapper">
             <a href="#" className="brand-logo">
               Intra mail System
             </a>
@@ -25,7 +25,7 @@ class Homenav extends React.Component {
                 </a>                
               </li> */}
               <li>
-                <a className="waves-effect waves-light btn green" href="#">
+                <a className="waves-effect waves-light btn" href="#">
                   <NavLink to="/logout" exact>
                     Logout
                   </NavLink>

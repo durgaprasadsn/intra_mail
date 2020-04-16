@@ -14,50 +14,52 @@ import About from "./pages/about";
 import Sent from "./pages/sent";
 import Sentnav from "./components/Sentnav";
 
+
+
 class App extends React.Component {
   render() {
     return (
       <AuthContext.Provider value={false}>
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <>
-            <Navbar />
-            <Intro />
-            </>
-          </Route>
-          <Route path="/login" exact>
-            <>
-            <Loginnav />
-            <Login />
-            </>
-          </Route>
-          <Route path="/logout" exact>
-            <>
-            <Logout />
-            </>
-          </Route>
-          <Route path="/signup" exact>
-            <>
-              <Signupnav />
-              <Signup />
-            </>
-          </Route>
-          <Route path="/home" exact>
-            <>
-              <Homenav />
-              <Home />
-            </>
-          </Route>
-          <Route path="/about" exact>
-            <About />
-          </Route>
-          <Route path="/sent" exact>
-            <Sentnav />
-            <Sent />
-          </Route>
-        </Switch>
-      </Router>
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <>
+                <Navbar />
+                <Intro />
+              </>
+            </Route>
+            <Route path="/login" exact>
+              <>
+                <Loginnav />
+                <Login />
+              </>
+            </Route>
+            <Route path="/logout" exact>
+              <>
+                <Logout />
+              </>
+            </Route>
+            <Route path="/signup" exact>
+              <>
+                <Signupnav />
+                <Signup />
+              </>
+            </Route>
+            <Route path="/home" exact>
+              <>
+                <Homenav />
+                <Home />
+              </>
+            </Route>
+            <Route path="/about" exact>
+              <About />
+            </Route>
+            <Route path="/sent" exact>
+              <Sentnav />
+              <Sent />
+            </Route>
+          </Switch>
+        </Router>
       </AuthContext.Provider>
     )
   }
