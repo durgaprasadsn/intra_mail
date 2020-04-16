@@ -142,6 +142,6 @@ if __name__ == "__main__":
     classifier = Classifier(df, 'tf-idf')
     classifier.train()
 
-    message = "We have assignment tomorrow"
-    pm = process_message(message)
-    print(classifier.classify(pm))
+    # message = "We have assignment tomorrow"
+    # pm = process_message(message)
+    # print(classifier.classify(pm))

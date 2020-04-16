@@ -25,13 +25,13 @@ class Sent extends React.Component {
       var division = document.createElement("div");
       division.setAttribute("className", "col m12");
       var head_subject = document.createElement("h5");
-      var head_sub = document.createElement("h6");
+      var head_sub = document.createElement("h5");
       head_sub.innerHTML = response[id]["subject"];
-      head_subject.innerHTML = "Subject :" + "<br>";
+      //head_subject.innerHTML = "Subject :" + "<br>";
       var head_body = document.createElement("h5");
       var head_bod = document.createElement("h6");
       head_bod.innerHTML = response[id]["body"];
-      head_body.innerHTML += "Body :" + "<br>";
+      //head_body.innerHTML += "Body :" + "<br>";
       division.appendChild(head_subject);
       division.appendChild(head_sub);
       division.appendChild(head_body);
@@ -53,11 +53,24 @@ class Sent extends React.Component {
         var anchor = document.createElement("a");
         anchor.setAttribute("id", i);
         anchor.href = "#";
-        anchor.innerHTML = response[i]["sender"] + " " + response[i]["subject"];
+        var div_sub = document.createElement("div");
+        div_sub.className = "col s6 m9";
+        var div_user = document.createElement("div");
+        div_user.className = "col s6 m3";
+        var user_head = document.createElement("h5");
+        user_head.innerHTML = response[i]["sender"];
+        user_head.setAttribute("align", "center")
+        var sub_head = document.createElement("h5");
+        //sub_head.innerHTML = response[i]["subject"];
+        div_user.appendChild(user_head);
+          div_sub.append(sub_head);
+        anchor.innerHTML = response[i]["subject"];
         anchor.addEventListener("click", function (e) {
           display_mail(e, response);
         });
-        head.appendChild(anchor);
+        sub_head.appendChild(anchor);
+        head.appendChild(div_user);
+        head.appendChild(div_sub);
         division.appendChild(head);
         document.getElementById(id).appendChild(division);
       }
@@ -101,7 +114,7 @@ class Sent extends React.Component {
               ]
   
               //TODO: mails is a list of mails for each mail create a div showing subject
-              add_mails("display", response);
+              add_mails("display", mails);
             }
             if(this.status == 401){
               alert("Token Expired! You are being logged out");
@@ -354,7 +367,7 @@ class Sent extends React.Component {
               </h5>
               </div>                
             <div className="col m12 card " style={divStyle}>
-                <h5 id="display"></h5>
+                <h5 id="display" className="section scrollspy"></h5>
             </div>
             </div>
             <div className="col s6">
