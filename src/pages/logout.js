@@ -4,6 +4,7 @@ class Logout extends React.Component {
     componentDidMount() {
         setTimeout(() => {
             localStorage.removeItem('token');
+            localStorage.removeItem('user');
             window.location.href="/login";
         }, 3000);
     }

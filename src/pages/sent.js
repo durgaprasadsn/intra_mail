@@ -29,13 +29,15 @@ class Sent extends React.Component {
       head_sub.innerHTML = response[id]["subject"];
       //head_subject.innerHTML = "Subject :" + "<br>";
       var head_body = document.createElement("h5");
+      var pre_tag = document.createElement("pre");
       var head_bod = document.createElement("h6");
       head_bod.innerHTML = response[id]["body"];
       //head_body.innerHTML += "Body :" + "<br>";
+      pre_tag.appendChild(head_bod);
       division.appendChild(head_subject);
       division.appendChild(head_sub);
       division.appendChild(head_body);
-      division.appendChild(head_bod);
+      division.appendChild(pre_tag);
       document.getElementById("individual_display").append(division);
     };
     function add_mails(id, response) {
@@ -58,7 +60,7 @@ class Sent extends React.Component {
         var div_user = document.createElement("div");
         div_user.className = "col s6 m3";
         var user_head = document.createElement("h5");
-        user_head.innerHTML = response[i]["sender"];
+        user_head.innerHTML = response[i]["receiver"];
         user_head.setAttribute("align", "center")
         var sub_head = document.createElement("h5");
         //sub_head.innerHTML = response[i]["subject"];
@@ -324,7 +326,7 @@ class Sent extends React.Component {
                   </div>
 
                   <div className="input-field col s12">
-                    <input className="validate" type="text" name="content" id="content" required />
+                    <textarea className="validate materialize-textarea" type="text" name="content" id="content" required />
                     <label for="content">Content:</label>
                   </div>
 
@@ -371,7 +373,7 @@ class Sent extends React.Component {
             </div>
             </div>
             <div className="col s6">
-              <div className="col m12 card" id="individual_display" style={divStyle}>
+              <div className="col m12 card" id="individual_display">
               <p>Displaying Each Individual Mail</p>
                 <p>Diaply Mail which might be in the format of Subject and Content</p>
               </div>
