@@ -47,7 +47,7 @@ exports.postMail = async (req) => {
     })
 }
 
-exports.getSentMail = async (req) {
+exports.getSentMail = async (req) => {
     return new Promise(async (resolve) => {
         console.log('Inside sent mails');
         const sender = req.decodedToken.user;
