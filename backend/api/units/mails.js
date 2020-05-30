@@ -4,7 +4,7 @@ const Mail = require('../models/mail');
 exports.postMail = async (req) => {
     return new Promise(async (resolve) => {
         const sender = req.decodedToken.user;
-        console.log("Inside postMail");
+        //console.log("Inside postMail");
         const message = req.body.subject + " " + req.body.body;
         const data = JSON.stringify({
             message: message
@@ -19,12 +19,12 @@ exports.postMail = async (req) => {
         }
         try {
             //const category = JSON.parse(await request.get('')).category;
-            console.log("sending to classifier");
+            //console.log("sending to classifier");
             const response = await axios(options);
-            console.log("Category received");
-            console.log(response);
-            console.log(response.data);
-            console.log(response.data.category);
+            //console.log("Category received");
+            //console.log(response);
+            //console.log(response.data);
+            //console.log(response.data.category);
             category = response.data.category;
             //category = 'assignment';
             const mail = new Mail({
@@ -36,11 +36,11 @@ exports.postMail = async (req) => {
                 category: category
             });
             await mail.save();
-            console.log("Sending 201");
+            //console.log("Sending 201");
             //res.status(201).json();
             resolve(201);
         } catch (err) {
-            console.log(err);
+            //console.log(err);
             resolve(500);
             //res.status(500).json({});
         }
@@ -49,14 +49,14 @@ exports.postMail = async (req) => {
 
 exports.getSentMail = async (req) => {
     return new Promise(async (resolve) => {
-        console.log('Inside sent mails');
+        //console.log('Inside sent mails');
         const sender = req.decodedToken.user;
-        console.log(sender);
+        //console.log(sender);
         let result = {}
         try {
             const mails = await Mail.find({ sender: sender });
-            console.log('Got mail');
-            console.log(mails);
+            //console.log('Got mail');
+            //console.log(mails);
             if (mails.length >= 1) {
                 //res.status(200).json(mails);
                 result.status = 200;
@@ -67,7 +67,7 @@ exports.getSentMail = async (req) => {
                 result.mails = {};
             }
         } catch (err) {
-            console.log(err);
+            //console.log(err);
             //res.status(500).json();
             result.status = 500;
         }
@@ -79,12 +79,12 @@ exports.getReceivedMails = async (req) => {
     return new Promise(async (resolve) => {
         const category = req.query.category;
         const receiver = req.decodedToken.user;
-        console.log("Inside received mails");
+        //console.log("Inside received mails");
         let result = {}
         try {
             const mails = await Mail.find({ receiver: receiver, category: category });
-            console.log(mails);
-            console.log("Sending 200");
+            //console.log(mails);
+            //console.log("Sending 200");
             result.status = 200;
             if (mails.length >= 1) {
                 //res.status(200).json(mails);
@@ -94,7 +94,7 @@ exports.getReceivedMails = async (req) => {
                 result.mails = {};
             }
         } catch (err) {
-            console.log(err);
+            //console.log(err);
             //return res.status(500).json();
             result.status = 500;
         }
@@ -106,22 +106,22 @@ exports.updateRead = async (req) => {
     return new Promise(async (resolve) => {
         const mailId = req.body.mailId;
         const reader = req.decodedToken.user;
-        console.log("Inside update read");
+        //console.log("Inside update read");
         let result = 0;
         try {
             const response = await Mail.updateOne({ mailId: mailId }, { $addToSet: { readBy: reader } });
-            console.log(response);
+            //console.log(response);
             if (response.nModified == 0) {
-                console.log("Sending 500");
+                //console.log("Sending 500");
                 //res.status(500).json();
                 result = 500;
             } else {
-                console.log("Sending 200");
+                //console.log("Sending 200");
                 //res.status(200).json();
                 result = 200;
             }
         } catch (err) {
-            console.log(err);
+            //console.log(err);
             //res.status(500).json();
             result = 500;
         }
@@ -133,7 +133,7 @@ exports.deleteMail = async (req) => {
     return new Promise(async (resolve) => {
         const mailId = req.params.mailId;
         const user = req.decodedToken.user;
-        console.log("inside deleteMail");
+        //console.log("inside deleteMail");
         let result = 0;
         try {
             response = await Mail.find({ mailId: mailId, sender: user });
@@ -145,11 +145,11 @@ exports.deleteMail = async (req) => {
                     await Mail.updateOne({ mailId: mailId }, { $pull: { receiver: user } });
                 }
             }
-            console.log("Sending 200");
+            //console.log("Sending 200");
             //res.status(200).json();
             result = 200;
         } catch (err) {
-            console.log(err);
+            //console.log(err);
             //res.status(500).json();
             result = 500;
         }

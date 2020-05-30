@@ -37,6 +37,7 @@ def classify():
         category = 'assignment'
     else:
         category = 'notification'
+    print("Sending message")
     return jsonify({'category':category}),200
     #pm = process_message(message)
     #print(classifier.classify(pm))

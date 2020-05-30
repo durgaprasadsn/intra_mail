@@ -10,6 +10,7 @@
     "bcrypt": "^4.0.1",
     "dotenv": "^8.2.0",
     "materialize-css": "^1.0.0",
+    "mongoose": "^5.9.16",
     "p5": "^1.0.0",
     "react": "^16.13.1",
     "react-custom-scrollbars": "^4.2.1",
@@ -26,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "unitTest": "mocha"
   },
   "eslintConfig": {
     "extends": "react-app"

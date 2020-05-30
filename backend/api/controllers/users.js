@@ -12,8 +12,8 @@ exports.checkUser = async (req, res, next) => {
     res.status(result).json({});
 }
 
-exports.userSignUP = (req, res, next) => {
-    let result = userUnit.userSignUp(req);
+exports.userSignUP = async (req, res, next) => {
+    let result = await userUnit.userSignUp(req);
     console.log("Received result from unit");
     console.log(result);
     res.status(result).json({});
