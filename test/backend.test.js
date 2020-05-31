@@ -135,7 +135,7 @@ describe('Backend Units test', function () {
                     }
                 }
                 userUnit.deleteUser(request).then((result) => {
-                    expect(result).to.equal(200);
+                    expect(result).to.equal(404);
                 });                
             });
         });
@@ -161,7 +161,7 @@ describe('Backend Units test', function () {
                 });                
                 //done();
             });
-            it('Should return 404', async function(done) {
+            it('Should return 405', async function(done) {
                 this.timeout(5000);
                 //setTimeout(done, 12000);
                 let request = {
@@ -175,7 +175,7 @@ describe('Backend Units test', function () {
                     }
                 }
                 mailUnit.postMail(request).then((result) => {
-                    expect(result).to.equal(404);
+                    expect(result).to.equal(405);
                 });
                 //done();
             });
